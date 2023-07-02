@@ -16,7 +16,7 @@ if [ "$template" != "$template_base" ] || [ "$output" != "$output_base" ]; then
   echo "以上名若有误,本程序将自动纠正"
 fi
 
-read -p "监听端主机 (LHOST): " lhost
+read -p "监听端IP  (LHOST): " lhost
 read -p "监听者端口 (LPORT): " lport
 read -p "countdown编码次数:" countdown
 
