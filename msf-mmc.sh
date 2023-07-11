@@ -30,7 +30,7 @@ fi
 
 echo "本程序仅供学习交流,禁止一切商用以及违法用途,否则一切后果自负"
 
-echo "				Version:F_3.01Q
+echo "				Version:F_3.02Q
  "
 
 echo "输入载体名(若未输入后缀,本程序将自动补齐)"
@@ -46,13 +46,13 @@ if [ "$template" != "$template_base" ] || [ "$output" != "$output_base" ]; then
   echo "以上名若有误,本程序将自动纠正"
 fi
 
+echo "请注意,本程序是内含3个编码模块,最大总编码次数为15次"
 read -p "监听端IP(LHOST): " lhost
 read -p "监听者端口(LPORT): " lport
 read -p "使用countdown模块次数: " countdown
 read -p "使用alpha_upper模块次数: " alpha_upper
 read -p "使用shikata_ga_nai模块次数: " shikata_ga_nai
 
-echo "请注意,本程序是内含3个编码模块,最大总编码次数为15次"
 total_count=$(($countdown + $alpha_upper + $shikata_ga_nai))
 if [ $total_count -gt 15 ]; then
   echo "总编码次数超过了限制(15次)"
